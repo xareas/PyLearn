@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/login_gradient_background"
+    tools:context=".ui.SplashActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/image_view_login_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splash_logo_height"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/snake_animation"
+        app:lottie_speed="5"
+        app:lottie_autoPlay="true"
+        tools:src="@drawable/snake"
+        android:contentDescription="@string/content_description_pylearn_logo" />
+
+    <TextView
+        android:id="@+id/text_view_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@id/image_view_login_logo"
+        android:text = "@string/pylearn"
+        android:textColor="@android:color/black"
+        android:textSize="70sp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/abel"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/text_view_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_view_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="right"
+        android:text="@string/pylearn_author"
+        android:layout_marginEnd="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="@font/euphoria_script"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_pylearn_info"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/text_view_login_version"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/abel"
+            android:text="@string/pylearn_version"
+            android:textColor="@color/matte_black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_development_team"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_half"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/abel"
+            android:text="@string/pylearn_credits"
+            android:textColor="@color/matte_black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_login_version" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

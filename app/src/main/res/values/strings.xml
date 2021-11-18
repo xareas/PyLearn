@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PyLearn</string>
+    <string name="title_home">Lecciones</string>
+    <string name="title_favorites">Favoritos</string>
+    <string name="title_dictionary">Diccionario</string>
+    <string name="content_description_login_tiger">Guardian Tiger Image</string>
+
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <!--    These strings will be deleted after creating the ROOM Database-->
+    <string name="lesson1">Introducción</string>
+    <string name="lesson2">¿Qué es Python? </string>
+    <string name="lesson3">Numéricos</string>
+    <string name="lesson4">Booleanos</string>
+    <string name="lesson5">Cadenas</string>
+    <string name="lesson6">Flujo</string>
+    <string name="lesson7">Condicionales</string>
+    <string name="lesson8">Bucles</string>
+    <string name="lesson9">Switch</string>
+    <string name="lesson10">Funciones</string>
+    <string name="lesson11">Cuestionario</string>
+    <string name="content_description_lesson_image">Imagen de un Animal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">Acerca de</string>
+    <string name="log_out">Cerrar Sesión</string>
+    <string name="about_pylearn">PyLearn es un proyecto destinado a la educación basado en los Objetivos de Desarrollo Sostenible.</string>
+    <string name="about_pylearn_2">Elaborado por estudiantes de la UCA para que los niños aprendan las bases de la programación.</string>
+    <string name="pylearn_version">Beta Version 1.0: Red Handkerchief</string>
+    <string name="pylearn">PyLearn</string>
+    <string name="pylearn_credits"><![CDATA[Jon Areas & Co., 2021]]></string>
+    <string name="content_description_pylearn_logo">PyLearn logo</string>
+    <string name="no_favorites_added">No se han agregado elementos...</string>
+    <string name="pylearn_author">By Jon Areas</string>
+    <string name="initdata">Inicializar datos</string>
+    <string name="cleardata">Limpiar datos</string>
+    <string name="emptyList">No Existen Lecciones Registradas</string>
+</resources>

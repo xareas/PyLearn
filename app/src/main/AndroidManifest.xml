@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jonareas.pylearn">
+
+    <application
+        android:allowBackup="true"
+        android:name=".PyLearnApplication"
+        android:icon="@mipmap/ic_pylearn"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_pylearn_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PyLearn">
+        <activity
+            android:name="com.jonareas.pylearn.ui.AboutActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.jonareas.pylearn.ui.SplashActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jonareas.pylearn.ui.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.jonareas.pylearn.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
