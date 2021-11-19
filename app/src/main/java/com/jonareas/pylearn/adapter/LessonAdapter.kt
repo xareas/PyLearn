@@ -17,27 +17,35 @@ import com.jonareas.pylearn.PyLearnApplication
 import com.jonareas.pylearn.R
 import com.jonareas.pylearn.data.model.LessonHeader
 import com.jonareas.pylearn.databinding.ItemLessonBinding
-import com.jonareas.pylearn.temp.DataSet
-import com.jonareas.pylearn.temp.Lesson
+import com.jonareas.pylearn.utils.OnClickLesson
 
-class LessonAdapter(val context : Context, val dataset : List<LessonHeader>)
+class LessonAdapter(
+    val context: Context,
+    val dataset: List<LessonHeader>,
+    var listener: OnClickLesson
+)
     : RecyclerView.Adapter<LessonAdapter.LessonViewHolder>()
 {
 
     inner class LessonViewHolder(private val itemLessonBinding : ItemLessonBinding) :
-        RecyclerView.ViewHolder(itemLessonBinding.root) {
+        RecyclerView.ViewHolder(itemLessonBinding.root)
+      {
 
-        fun bind(lesson : LessonHeader) {
+       fun bind(lesson : LessonHeader) {
 
             itemLessonBinding.itemTitle.text = lesson.description //this.itemView.context.getString(lesson.stringResourceId)
             var imgDraw = PyLearnApplication.instance.resources.getIdentifier(lesson.imageName, null,
                      PyLearnApplication.instance.packageName)
             itemLessonBinding.itemImage.setImageResource(imgDraw) //setImageDrawable
 
+            //Controlador de evento click
+            itemLessonBinding.root.setOnClickListener {
+                listener.OnClickItem(lesson)
+            }
+
             setBackgroundColors(this.itemView.context, imgDraw) //lesson.drawableResourceId
             animateView(itemLessonBinding.root)
         }
-
 
         private fun animateView(viewToAnimate: View) {
             if (viewToAnimate.animation == null) {
@@ -66,15 +74,20 @@ class LessonAdapter(val context : Context, val dataset : List<LessonHeader>)
             return darkness >= 0.5
         }
 
-    }
+
+
+
+      }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LessonViewHolder {
         var like = false
         val itemBinding = ItemLessonBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
+
         itemBinding.imageViewButton.setOnClickListener {
             like = likeAnimation(itemBinding.imageViewButton, R.raw.bandai_dokkan, like)
         }
+
         return LessonViewHolder(itemLessonBinding = itemBinding)
     }
 

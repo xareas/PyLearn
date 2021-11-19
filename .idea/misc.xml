@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AppFlutter/PyLearn/app/src/main/res/layout/fragment_lesson_show.xml" value="0.22" />
         <entry key="..\:/AppFlutter/PyLearn/app/src/main/res/layout/item_lesson.xml" value="0.18333333333333332" />
         <entry key="..\:/AppFlutter/PyLearn/app/src/main/res/menu/bottom_nav_menu.xml" value="0.33" />
         <entry key="..\:/AppFlutter/PyLearn/app/src/main/res/menu/top_menu.xml" value="0.203125" />

@@ -12,7 +12,7 @@ import com.jonareas.pylearn.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var loginBinding: ActivityLoginBinding
-
+     //credenciales
     private val USER_CREDENTIAL = "root"
 
     override fun onCreate(savedInstanceState: Bundle?) {

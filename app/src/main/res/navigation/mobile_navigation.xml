@@ -5,11 +5,17 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
 
+
+
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.jonareas.pylearn.ui.lessons.LessonFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_lesson" />
+        tools:layout="@layout/fragment_lesson" >
+        <action
+            android:id="@+id/action_lessonShow"
+            app:destination="@id/lessonShowFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_favorites"
@@ -22,4 +28,29 @@
         android:name="com.jonareas.pylearn.ui.dictionary.DictionaryFragment"
         android:label="@string/title_dictionary"
         tools:layout="@layout/fragment_dictionary" />
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.jonareas.pylearn.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/navBarFragment"
+        android:name="com.jonareas.pylearn.ui.navbar.NavBarFragment"
+        android:label="fragment_nav_bar"
+        tools:layout="@layout/fragment_nav_bar" />
+    <fragment
+        android:id="@+id/lessonShowFragment"
+        android:name="com.jonareas.pylearn.LessonShowFragment"
+        android:label="fragment_lesson_show"
+        tools:layout="@layout/fragment_lesson_show" >
+        <action
+            android:id="@+id/action_home"
+            app:destination="@id/navigation_home" />
+        <argument
+            android:name="lessonId"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+
+
 </navigation>

@@ -69,31 +69,31 @@ object PyLearnProvider {
     private fun initLessonDetail(): MutableList<LessonDetail> {
         val lessonDetail = mutableListOf<LessonDetail>()
         //Lesson 1
-        lessonDetail.add(LessonDetail(1, 1, 1, "Informacion primera",   Strings.getDrawName(R.drawable.dino)))
+        lessonDetail.add(LessonDetail(1, 1, 1, "Has dado clic a la leccion uno, primera info",   Strings.getDrawName(R.drawable.dino)))
         lessonDetail.add(LessonDetail(2, 1, 2, "Informacion primera 2", Strings.getDrawName(R.drawable.dino)))
-        lessonDetail.add(LessonDetail(3, 1, 3, "Informacion primera 3", Strings.getDrawName(R.drawable.dino)))
+        lessonDetail.add(LessonDetail(3, 1, 3, "uestra como es de complicado programar en esta mierda.", Strings.getDrawName(R.drawable.dino)))
         lessonDetail.add(LessonDetail(4, 1, 4, "Informacion primera 4", Strings.getDrawName(R.drawable.dino)))
 
         //Lesson 2
-        lessonDetail.add(LessonDetail(5, 2, 1, "Informacion Segunda", Strings.getDrawName(R.drawable.snake)))
+        lessonDetail.add(LessonDetail(5, 2, 1, "Segunda Leccion - Primera Info", Strings.getDrawName(R.drawable.snake)))
         lessonDetail.add(LessonDetail(6, 2, 2, "Informacion Segunda", Strings.getDrawName(R.drawable.snake)))
         lessonDetail.add(LessonDetail(7, 2, 3, "Informacion Segunda", Strings.getDrawName(R.drawable.snake)))
         lessonDetail.add(LessonDetail(8, 2, 4, "Informacion Segunda", Strings.getDrawName(R.drawable.snake)))
 
         //Lesson 3
-        lessonDetail.add(LessonDetail(9, 3, 1, "Informacion primera", Strings.getDrawName(R.drawable.cat)))
+        lessonDetail.add(LessonDetail(9, 3, 1, "Tercera Leccion - Primera Info", Strings.getDrawName(R.drawable.cat)))
         lessonDetail.add(LessonDetail(10, 3, 2, "Informacion primera", Strings.getDrawName(R.drawable.cat)))
         lessonDetail.add(LessonDetail(11, 3, 3, "Informacion primera", Strings.getDrawName(R.drawable.cat)))
         lessonDetail.add(LessonDetail(12, 3, 4, "Informacion primera", Strings.getDrawName(R.drawable.cat)))
 
         //Lesson 4
-        lessonDetail.add(LessonDetail(13, 4, 1, "Informacion primera", Strings.getDrawName(R.drawable.chameleon)))
+        lessonDetail.add(LessonDetail(13, 4, 1, "Cuarta Leccion - Primera Info", Strings.getDrawName(R.drawable.chameleon)))
         lessonDetail.add(LessonDetail(14, 4, 2, "Informacion primera", Strings.getDrawName(R.drawable.chameleon)))
         lessonDetail.add(LessonDetail(15, 4, 3, "Informacion primera", Strings.getDrawName(R.drawable.chameleon)))
         lessonDetail.add(LessonDetail(16, 4, 4, "Informacion primera", Strings.getDrawName(R.drawable.chameleon)))
 
         //Lesson 5
-        lessonDetail.add(LessonDetail(17, 5, 1, "Informacion primera", Strings.getDrawName(R.drawable.fish)))
+        lessonDetail.add(LessonDetail(17, 5, 1, "Quinta Leccion - Primera Info", Strings.getDrawName(R.drawable.fish)))
         lessonDetail.add(LessonDetail(18, 5, 2, "Informacion primera", Strings.getDrawName(R.drawable.fish)))
         lessonDetail.add(LessonDetail(19, 5, 3, "Informacion primera", Strings.getDrawName(R.drawable.fish)))
         lessonDetail.add(LessonDetail(20, 5, 4, "Informacion primera", Strings.getDrawName(R.drawable.fish)))
