@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jonareas.pylearn">
+    package="com.xareas.pylearn">
 
     <application
         android:allowBackup="true"
-        android:name=".PyLearnApplication"
+        android:name="com.xareas.pylearn.PyLearnApplication"
         android:icon="@mipmap/ic_pylearn"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_pylearn_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PyLearn">
         <activity
-            android:name="com.jonareas.pylearn.ui.AboutActivity"
+            android:name="com.xareas.pylearn.ui.AboutActivity"
             android:exported="true" />
         <activity
-            android:name="com.jonareas.pylearn.ui.SplashActivity"
+            android:name="com.xareas.pylearn.ui.SplashActivity"
             android:exported="true"
             android:noHistory="true"
             android:screenOrientation="portrait"
@@ -26,10 +26,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.jonareas.pylearn.ui.LoginActivity"
+            android:name="com.xareas.pylearn.ui.LoginActivity"
             android:exported="true" />
         <activity
-            android:name="com.jonareas.pylearn.MainActivity"
+            android:name="com.xareas.pylearn.MainActivity"
             android:exported="true"
             android:label="@string/app_name" />
 

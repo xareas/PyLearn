@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.jonareas.pylearn.ui.lessons.LessonFragment"
+        android:name="com.xareas.pylearn.ui.lessons.LessonFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_lesson" >
         <action
@@ -19,29 +19,30 @@
 
     <fragment
         android:id="@+id/navigation_favorites"
-        android:name="com.jonareas.pylearn.ui.favorites.FavoritesFragment"
+        android:name="com.xareas.pylearn.ui.favorites.FavoritesFragment"
         android:label="@string/title_favorites"
         tools:layout="@layout/fragment_favorites" />
 
     <fragment
         android:id="@+id/navigation_dictionary"
-        android:name="com.jonareas.pylearn.ui.dictionary.DictionaryFragment"
+        android:name="com.xareas.pylearn.ui.dictionary.DictionaryFragment"
         android:label="@string/title_dictionary"
         tools:layout="@layout/fragment_dictionary" />
 
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.jonareas.pylearn.MainActivity"
+        android:name="com.xareas.pylearn.MainActivity"
         android:label="MainActivity" />
     <fragment
         android:id="@+id/navBarFragment"
-        android:name="com.jonareas.pylearn.ui.navbar.NavBarFragment"
+        android:name="com.xareas.pylearn.ui.navbar.NavBarFragment"
         android:label="fragment_nav_bar"
         tools:layout="@layout/fragment_nav_bar" />
     <fragment
         android:id="@+id/lessonShowFragment"
-        android:name="com.jonareas.pylearn.LessonShowFragment"
-        android:label="fragment_lesson_show"
+        android:name="com.xareas.pylearn.LessonShowFragment"
+        android:label="Lecciones"
+
         tools:layout="@layout/fragment_lesson_show" >
         <action
             android:id="@+id/action_home"
